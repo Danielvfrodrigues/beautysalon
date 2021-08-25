@@ -38,13 +38,18 @@ function changeHeaderWhenScroll() {
 const swiper = new Swiper ('.swiper-container', {
   slidesPerView: 1,
   pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination',
+      type: 'bullets'
   },
   mousewheel: true,
   keyboard: true,
   breakpoints: {
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      setWrapperSize: true
+    },
+    1200: {
+      slidesPerView: 3,
       setWrapperSize: true
     }
   }
@@ -54,7 +59,7 @@ const swiper = new Swiper ('.swiper-container', {
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 700,
+  duration: 500,
   reset: true
 })
 
