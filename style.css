@@ -408,6 +408,10 @@ nav.show div.icon-close {
 }
 
 /* SWIPER */
+.swiper-container {
+  overflow-x: hidden;
+}
+
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
